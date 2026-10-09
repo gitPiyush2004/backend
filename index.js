@@ -19,7 +19,6 @@ app.get('/login', (req, res) => {
     res.send("<h2>Chai aur code</h2>")
 })
 
-app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${port}`)
-})
-
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`App listening on port ${PORT}`);
+});
